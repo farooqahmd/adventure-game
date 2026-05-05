@@ -1,8 +1,10 @@
-schemaVersion: 1.0
+schemaVersion: "1.2"
 endpoints:
-  - name: adventure-game-api
-    service:
-      port: 8000
-    type: REST
-    networkVisibility: Public
-    context: /
+    - name: adventure-game-api
+      displayName: adventure-game-api
+      service:
+        basePath: /
+        port: 8000
+      type: REST
+      networkVisibilities:
+        - Public
