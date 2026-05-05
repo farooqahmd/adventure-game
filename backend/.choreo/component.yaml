@@ -1,7 +1,8 @@
 schemaVersion: 1.0
 endpoints:
-  - name: Adventure Game API
-    port: 8000
+  - name: adventure-game-api
+    service:
+      port: 8000
     type: REST
     networkVisibility: Public
     context: /
