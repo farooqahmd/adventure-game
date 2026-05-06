@@ -17,7 +17,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.ALLOWED_ORIGINS,
+    allow_origins=[https://4aa3326a-7f10-43c4-b86a-6cf786df9b30.e1-eu-north-azure.choreoapps.dev],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
